@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a36dc087d123a6dbb9fa8415e998d006",
+    "content-hash": "75d867898293610767374a10118d4c8c",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
-            "version": "11.5",
+            "version": "11.6",
             "dist": {
                 "type": "path",
                 "url": "packages/ext-solr"
@@ -40,7 +40,7 @@
                 "sclable/xml-lint": "*",
                 "scrutinizer/ocular": "*",
                 "typo3/cms-fluid-styled-content": "*",
-                "typo3/coding-standards": "~0.6.1",
+                "typo3/coding-standards": ">=0.5.0",
                 "typo3/testing-framework": "^6.12"
             },
             "type": "typo3-cms-extension",
@@ -94,7 +94,7 @@
                 ],
                 "tests:env": [
                     "if [ -z ${TYPO3_VERSION+x} ]; then >&2 echo \"Can not proceed, because env var TYPO3_VERSION is not set\"; exit 1; else echo \"Setup test environment for TYPO3 ${TYPO3_VERSION}\"; fi",
-                    "if echo $TYPO3_VERSION | grep -q \"dev\"; then $COMPOSER_BINARY config minimum-stability dev; fi"
+                    "if [ \"${TYPO3_VERSION#*dev}\" != \"dev\" ]; then $COMPOSER_BINARY config minimum-stability dev; fi"
                 ],
                 "tests:setup": [
                     "@tests:env",

@@ -14,11 +14,12 @@
           "apache-solr-for-typo3/introduction-solrdebugtools":    "11.5",
           "apache-solr-for-typo3/introduction-solrfal":           "11.5",
           "apache-solr-for-typo3/introduction-solrfluidgrouping": "11.5",
+          "apache-solr-for-typo3/introduction-solrexternaldata":  "11.5",
 
           "apache-solr-for-typo3/introduction-rector":            "11.5",
 
           "apache-solr-for-typo3/php-solr-explain":               "2.0.0",
-          "apache-solr-for-typo3/solr":                           "11.5",
+          "apache-solr-for-typo3/solr":                           "11.6",
           "apache-solr-for-typo3/solrconsole":                    "11.0",
           "apache-solr-for-typo3/solrdebugtools":                 "11.0",
           "apache-solr-for-typo3/solrfal":                        "11.0",
@@ -26,6 +27,7 @@
           "apache-solr-for-typo3/solrfheadless":                  "11.0",
           "apache-solr-for-typo3/solrmlt":                        "11.0",
           "apache-solr-for-typo3/tika":                           "11.0",
+          "apache-solr-for-typo3/solrexternaldata":               "11.0",
 
           "dkd/apache-solr-for-typo3-sitepackage":                "11.5"
         }
@@ -40,7 +42,7 @@
     "helhum/typo3-console": "~7.1.2",
     "typo3-console/composer-auto-commands": "0.5.2",
     "dkd/apache-solr-for-typo3-sitepackage": "11.5",
-    "apache-solr-for-typo3/solr": "11.5"
+    "apache-solr-for-typo3/solr": "11.6"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.5",
