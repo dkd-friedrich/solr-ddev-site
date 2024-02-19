@@ -6,8 +6,8 @@
 
 function expandAllSolrExtensions() {
   local solrExtensions=(
-    public/typo3conf/ext/solr*
-    public/typo3conf/ext/tika
+    vendor/apache-solr-for-typo3/solr*
+    vendor/apache-solr-for-typo3/tika
   )
   echo "${solrExtensions[@]}"
 }
@@ -25,7 +25,7 @@ function runIntegrationTests() {
   checkExtensionIsInstalled "$1"
   echo -e "${FIRST_LINE_PREFIX}Run Integration tests on EXT:$(basename "$1")\n\n"
   INTEGRATION_CONFIGURATION="$1/Build/Test/IntegrationTests.xml"
-  INTEGRATION_BOOTSTRAP="packages/ext-solr/Build/Test/IntegrationTestsBootstrap.php"
+  INTEGRATION_BOOTSTRAP="vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTestsBootstrap.php"
   ./vendor/bin/phpunit \
     --bootstrap="${INTEGRATION_BOOTSTRAP}" \
     --configuration "${INTEGRATION_CONFIGURATION}" \

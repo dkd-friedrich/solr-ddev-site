@@ -1,4 +1,4 @@
-base: 'https://solr-ddev-site.ddev.site/'
+base: 'https://solr-ddev-site-124.ddev.site/'
 languages:
   -
     title: English
